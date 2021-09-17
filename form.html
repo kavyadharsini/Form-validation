@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registeration Form</title>
+	<link rel="stylesheet" href="form.css">
+	<script src="validation.js"></script>
+</head>
+<body>
+<center><br><bre><h1 style="color:red;"> Hii...Welcome to My site</h1><center>
+<div class="cont">
+  <h2> _Register Here_ </h2>
+  <div id="error_message"></div>
+<form id="myform" onsubmit="return validate();">
+  <center>
+    <div class="input_field">
+        <label for="FirstName">FirstName</label>
+        <input type="text" placeholder="First Name" id="firstname">
+    </div>
+    <div class="input_field">
+        <label for="LastName">LastName</label>
+        <input type="text" placeholder="Last Name" id="lastname">
+    </div>
+    <div class="input_field">
+        <label for="Email">Email</label>
+        <input type="text" placeholder="Email" id="email">
+    </div>
+    <div class="input_field">
+        <label for="phone2numeric">PhoneNo</label>
+        <input type="text" placeholder="Phone Number" id="phone">
+    </div>
+    <div class="input_field">
+        <label for="date">DateOfBirth</label>
+        <input type="date" placeholder="date" id="date">
+    </div>
+    <div class="input_field">
+        <label for="age">Age</label>
+        <input type="age" placeholder="age" id="age">
+    </div>
+    <div class="input_field">
+        <label for="image">Profile</label>
+        <input type="file" id="img" name="avatar" accept="image/png, image/jpeg">
+    </div>
+    <div class="input_field">
+        <label for="file">Resume</label>
+        <input type="file" placeholder="Resume" id="file">
+    </div>
+    <div class="input_field">
+        <label for="mydept">Department</label>
+        <input list="dept" id="mydept" name="mydept" />
+        <datalist id="dept">
+        <option value="COMPUTER SCIENCE AND ENGINEERING">
+        <option value="INFORMATION TECHNOLOGY">
+        <option value="ELECTRONICS AND COMMUNICATION ENGINEERING">
+        <option value="ELECTRICAL AND ELECTRONICS ENGINEERING">
+        <option value="MECHANICAL ENGINEERING">
+        <option value="OTHERS">
+        </datalist>
+    </div>
+    <div class="input_field">
+        <label for="color">FavColor</label>
+        <input type="color" placeholder="color" id="color">
+    </div>
+
+    <label><pre>Gender             .</pre> </label>
+    <input id="male" name="gender" type="radio" value="Male"<label>Male</label> 
+    <input id="female" name="gender" type="radio" value="Female" <label>Female</label>
+    <div class="input_field">
+        <label for="about">AboutYou</label>
+        <textarea placeholder="Say something about you" id="about"></textarea>
+    </div>
+    
+    <div class="btn">
+        <input type="submit" value="REGISTER ">
+    </div>
+</center>
+</form>
+</div>
+</body>
+</html>
